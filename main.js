@@ -21,7 +21,7 @@ function convertToWord(letter) {
 }
 
 function win(userChoice, computerChoice) {
-  const smallUserWord = "user".fontsize("5").fontcolor("red").italics().sub();
+  const smallUserWord = "user".fontsize("5").fontcolor("green").italics().sub();
   const smallCompWord = "comp ".fontsize("5").fontcolor("red").italics().sub();
   const userChoice_div = document.getElementById(userChoice);
   userScore++;
@@ -38,7 +38,7 @@ function win(userChoice, computerChoice) {
 
 function lose(userChoice, computerChoice) {
   const smallUserWord = "user".fontsize("5").fontcolor("red").italics().sub();
-  const smallCompWord = "comp ".fontsize("5").fontcolor("red").italics().sub();
+  const smallCompWord = "comp ".fontsize("5").fontcolor("green").italics().sub();
   const userChoice_div = document.getElementById(userChoice);
   computerScore++;
   userScore_span.innerHTML = userScore;
@@ -53,8 +53,8 @@ function lose(userChoice, computerChoice) {
 }
 
 function draw(userChoice, computerChoice) {
-  const smallUserWord = "user".fontsize("5").fontcolor("red").italics().sub();
-  const smallCompWord = "comp ".fontsize("5").fontcolor("red").italics().sub();
+  const smallUserWord = "user".fontsize("5").fontcolor("white").italics().sub();
+  const smallCompWord = "comp ".fontsize("5").fontcolor("white").italics().sub();
   const userChoice_div = document.getElementById(userChoice);
   result_p.innerHTML = `${convertToWord(
     userChoice
